@@ -1,3 +1,9 @@
+
+//DEPS io.quarkus:quarkus-picocli:1.10.5.Final
+//DEPS io.quarkus:quarkus-kubernetes-client:1.10.5.Final
+//Q:CONFIG quarkus.banner.enabled=false
+//Q:CONFIG quarkus.log.level=WARN
+
 package org.sebi;
 
 import picocli.CommandLine;
@@ -9,7 +15,7 @@ import io.fabric8.kubernetes.api.model.ResourceRequirementsBuilder;
 import io.fabric8.kubernetes.client.KubernetesClient;
 
 @CommandLine.Command
-public class RequestLimit implements Runnable {
+public class KubectlLimit implements Runnable {
 
     private final KubernetesClient kubernetesClient;
 
@@ -19,7 +25,7 @@ public class RequestLimit implements Runnable {
     @Option(names = "--cpu-limit", paramLabel = "CPULIMIT", description = "CPU Limit")
     String cpuLimit;
 
-    public RequestLimit(KubernetesClient kubernetesClient) {
+    public KubectlLimit(KubernetesClient kubernetesClient) {
         this.kubernetesClient = kubernetesClient;
     }
 

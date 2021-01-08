@@ -1,0 +1,8 @@
+{
+  "catalogs": {},
+  "aliases": {
+    "kubectl-limit": {
+      "script-ref": "src/kubectl-limit"
+    }
+  }
+}
