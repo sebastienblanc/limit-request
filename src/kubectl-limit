@@ -1,7 +1,7 @@
 
-//DEPS io.quarkus:quarkus-picocli:1.10.5.Final
-//DEPS io.quarkus:quarkus-kubernetes-client:1.10.5.Final
-//DEPS com.squareup.okhttp3:okhttp:3.14.9
+//DEPS io.quarkus:quarkus-bom:1.10.5.Final@pom
+//DEPS io.quarkus:quarkus-picocli
+//DEPS io.quarkus:quarkus-kubernetes-client
 //Q:CONFIG quarkus.banner.enabled=false
 //Q:CONFIG quarkus.log.level=WARN
 
